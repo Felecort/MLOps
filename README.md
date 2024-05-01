@@ -14,6 +14,9 @@ Noone use `SQLite` in prod because it one-thread and not robust
 
 In prod we can use `PostgreSQL`, `MySQL`, `MSSQL`
 
+By default `Airflow` creates `SQLite` DB  
+`airflow standalone` - config and create DB for the first time
+
 ### DAGs  
 Directed acyclid graph  
 
