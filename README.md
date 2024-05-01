@@ -19,6 +19,23 @@ By default `Airflow` creates `SQLite` DB
 
 ### DAGs  
 Directed acyclid graph  
+Take args to initialize  
+
+![alt text](images/DAG_args.png)
+
+Simple code:  
+
+![alt text](images/DAG_init_code.png)
+
+DAGs starts in `start_date` + `interval`  
+`start_date` must be in the past  
+
+### PythonOperator  
+![alt text](images/py_op_and_code.png)
+
+### Hoks  
+Need to create connection  
+Use it for passwords and confidectial info that do not for commom user  
 
 ## MLFlow  
 Automize  
