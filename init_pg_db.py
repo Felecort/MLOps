@@ -15,7 +15,7 @@ dataset = np.concatenate([data['data'], data['target'].reshape([data['target'].s
 dataset = pd.DataFrame(dataset, columns = data['feature_names']+data['target_names'])
 
 # Создадим подключение к базе данных postgres. Поменяйте на свой пароль yourpass
-engine = create_engine('postgresql://postgres:yourpass@localhost:5432/postgres')
+engine = create_engine('postgresql://postgres:postrges_pass@localhost:5432/postgres')
 
 # Сохраним датасет в базу данных
 dataset.to_sql('california_housing', engine)
